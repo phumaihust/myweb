@@ -1,0 +1,120 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.container {
+	width: 100%;
+	margin: 0 auto;
+}
+
+nav {
+	background-color: #e4e4e4;
+	line-height: 50px;
+}
+
+nav .container > ul {
+	display: flex;
+	list-style: none;
+}
+
+nav ul li {
+	position: relative;
+	list-style: none;
+}
+
+nav ul li a {
+	text-decoration: none;
+	display: block;
+}
+
+nav ul > li {
+	padding: 0 20px;
+	
+}
+
+nav > .container > ul > li > a {
+	border-bottom: 2px solid transparent;
+	
+	display: block;
+}
+
+
+nav ul li:hover {
+	background-color: #8fde45;
+}
+
+nav ul li:hover > a {
+	color: #a845de;
+	border-color: #debd45;
+}
+
+
+nav ul ul, nav .sub-menu  {
+	position: absolute;
+	left: 0;
+	top: 100%;
+	width: 200px;
+	border: 1px solid #45de7b;
+	display: none;
+}
+
+nav ul ul ul {
+	top: 0;
+	left: 100%;
+	margin: 1px;
+}
+
+
+nav ul li:hover > ul {
+	display: block;
+}
+main {
+    margin-top: 200px;
+    margin-left: 300px;
+}
+
+.btn {
+    position: relative;
+}
+
+.btn button {
+	padding: 0 20px;
+	display: inline-block;
+	line-height: 50px;
+	margin: 24px 0 0;
+	outline: 0;
+	background-color: #e4e4e4;
+	border: 0;
+	font-size: 20px;
+	border-radius: 8px;
+	cursor: pointer;
+}
+
+.tooltips {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    border: 1px solid #a845de;
+    padding: 30px;
+    border-radius: 8px;
+    visibility: hidden;
+    background-color: #a845de;
+}
+
+.btn:hover .tooltips {
+	visibility: visible;
+}
+
+.tooltips::after {
+	content: " ";
+	width: 0;
+	height: 0;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-top: 15px solid #a845de;
+	position: absolute;
+	top: 100%;
+	left: 40px;
+}
