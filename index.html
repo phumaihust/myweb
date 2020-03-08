@@ -1,27 +1,55 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>State</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <label class="checkbox">
-        <input type="checkbox" name="chbx" id="chbx">
-        <span>
-            <span></span>
-        </span>
-    </label>
+    <div id="main">
+        <h2>Toggle Switch</h2>
+        <div class="sw">
+            <input type="checkbox" id="toggle" class="checkbox" />
+            <label for="toggle" class="switch"></label>
+        </div>
 
-    <label class="checkbox">
-        <input type="checkbox" name="chbx" id="chbx">
-        <span>
+        <h2>Tab</h2>
+        <div class="tab">
+            <div class="tab-header">
+                <label for="tab1"> Tab 1</label>
+                <label for="tab2"> Tab 2</label>
+                <label for="tab3"> Tab 3</label>
+                <div style="clear: both"></div>
+            </div>
+
+            <div class="tab-content">
+                <input id="tab1" type="radio" name="tab" checked="checked">
+                <div>
+                    CSS is a language that describes the style of an HTML document.CSS describes how HTML elements should be displayed.This tutorial will teach you CSS from basic to advanced.
+                </div>
+
+                <input id="tab2" type="radio" name="tab">
+                <div>
+                    CSS is a language that describes the style of an HTML document.CSS describes how HTML elements should be displayed.This tutorial will teach you CSS from basic to advanced. Click on the "Try it Yourself" button to see how it works.
+                </div>
+
+                <input id="tab3" type="radio" name="tab">
+                <div>
+                    CSS is a language that describes the style of an HTML document.CSS describes how HTML elements should be displayed.This tutorial will teach you CSS from basic to advanced. We have created some responsive W3.CSS templates for you to use. You are free to modify, save, share, and use them in all your projects.
+                </div>
+            </div>
+        </div>
+        <h2>Button</h2>
+        <button class="btn">
+            <span>Hover Me</span>
             <span></span>
-        </span>
-    </label>
+        </button>
+    </div>
+
 </body>
-</html>
 
+</html>
 
